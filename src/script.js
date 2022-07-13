@@ -77,6 +77,8 @@ function footerDate() {
     copyright.innerHTML = '© Gabriel Petillo ' + date.getFullYear();
 }
 
+backToTopButton.style.display = "none";
+topFunction();
 setGalleryImages();
 fadeAnimation();
 footerDate();

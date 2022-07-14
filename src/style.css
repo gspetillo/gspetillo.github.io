@@ -587,6 +587,7 @@ body {
     width: 100vw;
   }
   #contact {
+    height: 400vw;
     width: 10%;
   }
   #contact .section {
@@ -605,11 +606,11 @@ body {
   }
   #contact iframe {
     margin: 0;
-    width: 80vw;
-    height: 50vw;
+    width: 75vw;
+    height: 250vw;
   }
   #portfolio {
-    height: 180vw;
+    height: 200vw;
   }
   #gallery {
     flex-direction: column;
@@ -645,7 +646,7 @@ body {
     width: 60%;
   }
   #about .section img {
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
     width: 50vw;
     height: 50vw;
     align-self: center;
@@ -653,11 +654,14 @@ body {
   }
   #bio {
     width: 75vw;
+    padding:0;
+    margin: 0;
   }
   #bio h3 {
     font-size: 8vw;
     width: 85vw;
     text-align: center;
+    margin: 0;
     margin-bottom: 2rem;
   }
 }

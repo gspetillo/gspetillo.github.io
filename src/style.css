@@ -119,7 +119,7 @@ a {
   margin: 0 0.5rem;
 }
 
-#header a:hover {
+#header span a:hover {
   color: #fff;
   padding-bottom: 5px;
   border-bottom: 2px solid #12d9f3;

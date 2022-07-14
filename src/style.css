@@ -7,6 +7,26 @@
   font-family: "Albert Sans", sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #041f2d; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7e7e7e; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0fb4ca; 
+}
+
 html {
   scroll-behavior: smooth;
 }

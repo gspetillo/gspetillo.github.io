@@ -76,10 +76,6 @@ a {
   margin: 0 5rem;
 }
 
-/* #services .content:first-child {
-  margin: 5rem;
-} */
-
 #header img {
   align-self: flex-start;
   height: 4rem;
@@ -323,7 +319,7 @@ details li:hover {
 }
 
 #portfolio {
-  height: 110vh;
+  height: 75vw;
 }
 
 #about .title,
@@ -505,7 +501,13 @@ body {
   padding: 0;
 }
 
+
 @media (max-width: 1100px) {
+  body{
+    top: 0;
+    left: 0
+  }
+  
   #app,
   #lead {
     width: 100%;
@@ -515,7 +517,6 @@ body {
     justify-self: center;
   }
   #header {
-    margin-top: 1rem;
     width: 80vw;
     flex-direction: column;
   }
@@ -543,17 +544,20 @@ body {
     margin-top: -8rem;
   }
   #lead h1 {
-    font-size: 4rem;
+    font-size: 5vw;
   }
   #lead h2 {
-    font-size: 2rem;
+    font-size: 2vw;
+  }
+  #services .content{
+    margin-left: 6vw;
   }
   .column:first-child {
-    margin-left: 6rem;
+    margin-left: 6vw;
   }
   .column {
-    width: 80%;
-    margin-left: 6rem;
+    width: 75%;
+    margin-left: 6vw;
   }
   #block,
   #about span {
@@ -582,10 +586,10 @@ body {
   #contact iframe {
     margin: 0;
     width: 80vw;
-    height: 120vh;
+    height: 50vw;
   }
   #portfolio {
-    height: 130vw;
+    height: 180vw;
   }
   #gallery {
     flex-direction: column;
@@ -631,6 +635,7 @@ body {
     width: 75vw;
   }
   #bio h3 {
+    font-size: 8vw;
     width: 85vw;
     text-align: center;
     margin-bottom: 2rem;

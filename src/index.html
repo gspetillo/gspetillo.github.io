@@ -10,6 +10,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -90,41 +92,62 @@
   </head>
   <body>
     <div id="app">
-      <button id="backToTop" class="animate__animated animate__pulse animate__slow animate__infinite" onclick="topFunction()"><b>▲</b></button>
+      <button id="backToTop" class="animate__animated animate__pulse animate__slow animate__infinite" onclick="topFunction()"><span class="material-icons">
+        north
+        </span></button>
       <div id="header">
-        <a href="">
+        <a id="logo" href="">
           <img
             src="./assets/images/logo/gabriel-petillo-logo.png"
             alt=""
             class="animate__animated animate__pulse animate__slow animate__infinite"
           />
         </a>
+        <span class="menu">
         <a
           href="#services"
-          class="animate__animated animate__fadeInUp animate__slow"
-          >Serviços</a
+          class="menuItem animate__animated animate__fadeInUp animate__slow"
+          ><span class="material-icons">
+            list
+            </span>Serviços</a
         >
         <a
-          href="#video"
-          class="animate__animated animate__fadeInUp animate__slow"
-          >Video</a
-        >
-        <a
-          href="#portifolio"
-          class="animate__animated animate__fadeInUp animate__slow"
-          >Portifólio</a
+        href="#video"
+          class="menuItem animate__animated animate__fadeInUp animate__slow"
+          ><span class="material-icons">
+            smart_display
+            </span>Video</a
         >
         <a
           href="#contact"
-          class="animate__animated animate__fadeInUp animate__slow"
-          >Contato</a
+          class="menuItem animate__animated animate__fadeInUp animate__slow"
+          ><span class="material-icons">
+            perm_contact_calendar
+            </span>Contato</a
+            >
+        <a
+          href="#portfolio"
+          class="menuItem animate__animated animate__fadeInUp animate__slow"
+          ><span class="material-icons">
+            folder
+            </span>Portifólio</a
+        >
+        <a
+          href="#project"
+          class="menuItem animate__animated animate__fadeInUp animate__slow"
+          ><span class="material-icons">
+            factory
+            </span>Projetos</a
         >
         <a
           href="#about"
-          class="animate__animated animate__fadeInUp animate__slow"
-          >Sobre</a
-        >
-      </div>
+          class="menuItem animate__animated animate__fadeInUp animate__slow"
+          ><span class="material-icons">
+            info
+            </span>Sobre</a
+            >
+          </div>
+        </span>
       <div id="lead">
         <span class="animate__animated animate__backInUp animate__slow">
           <h2>Inovação em</h2>
@@ -132,76 +155,166 @@
             id="subtitle"
             class="animate__animated animate__fadeIn animate__slow animate__infinite"
           >
-            Consultoria de<br />Soluções em TI
+            Consultoria de<br>Soluções em TI
           </h1>
         </span>
       </div>
       <section id="services">
         <div class="section content">
-          <h2>Serviços</h2>
+          <h2><span class="material-icons">
+            list
+            </span> Serviços</h2>
           <div id="block">
             <div class="column">
-              <details
-                class="collapse"
-                class="animate__animated animate__slideInUp"
-              >
+              <details class="collapse" onclick="showDetails(0)">
                 <summary class="title">Desenvolvimento de Software</summary>
                 <div class="description">
-                  Desenvolvimento de Website <br />
-                  Desenvolvimento de App <br />
-                  Consultoria de Projetos
+                  <ul>
+                    <li>
+                      <span class="material-icons">
+                        computer
+                      </span> Desenvolvimento de Website
+                    </li>
+                    <li>
+                      <span class="material-icons">
+                        phone_iphone
+                      </span>
+                    Desenvolvimento de App </li>
+                    <li>
+                      <span class="material-icons">
+                        description
+                      </span>
+                    Consultoria de Projetos</li>
+                  </ul>
                 </div>
               </details>
-              <details class="collapse">
+              <details class="collapse" onclick="showDetails(1)">
                 <summary class="title">Design Digital</summary>
                 <div class="description">
-                  Design de Logotipos <br />
-                  Criação de Identidade Visual
+                  <li>
+                    <span class="material-icons">
+                      brush
+                    </span>
+                  Design de Logotipos <br></li>
+                  <li>
+                    <span class="material-icons">
+                      palette
+                    </span>
+                  Criação de Identidade Visual</li>
                 </div>
               </details>
             </div>
             <div class="column">
-              <details class="collapse">
+              <details class="collapse" onclick="showDetails(2)">
                 <summary class="title">Produtos Digitais</summary>
                 <div class="description">
-                  Planejamento de Ações <br />
-                  Gerenciamento de Mídias Sociais
+                  <li>
+                    <span class="material-icons">
+                      store
+                    </span>
+                  Planejamento de Ações <br></li>
+                  <li>
+                    <span class="material-icons">
+                      alternate_email
+                    </span>
+                  Gerenciamento de Mídias Sociais</li>
                 </div>
               </details>
-              <details class="collapse">
+              <details class="collapse" onclick="showDetails(3)">
                 <summary class="title">Marketing Digital</summary>
                 <div class="description">
-                  Gerenciamento de Produtos <br />
-                  Consultoria de Produtos
+                  <li>
+                    <span class="material-icons">
+                      card_giftcard
+                    </span>
+                  Gerenciamento de Produtos <br></li>
+                  <li>
+                    <span class="material-icons">
+                      star_rate
+                    </span>
+                  Consultoria de Produtos </li>
                 </div>
               </details>
-              <details class="collapse">
+              <details class="collapse" onclick="showDetails(4)">
                 <summary class="title">Cursos Particulares</summary>
                 <div class="description">
-                  Python <br />
-                  Linguagem C <br />
-                  Javascript <br />
-                  SQL <br />
-                  VisualG <br />
-                  Plantão de Dúvidas
+                  <li>
+                    <span class="material-icons">
+                      terminal
+                    </span>
+                  Python <br></li>
+                  <li>
+                    <span class="material-icons">
+                      html
+                    </span>
+                  Web Frontend <br></li>
+                  <li>
+                    <span class="material-icons">
+                      copyright
+                    </span>
+                  Linguagem C <br></li>
+                  <li>
+                    <span class="material-icons">
+                      javascript
+                    </span>
+                  Javascript <br></li>
+                  <li>
+                    <span class="material-icons">
+                      dns
+                    </span>
+                  SQL <br></li>
+                  <li>
+                    <span class="material-icons">
+                      terminal
+                    </span>
+                  VisualG <br></li>
+                  <li>
+                    <span class="material-icons">
+                      help
+                    </span>
+                  Plantão de Dúvidas</li>
                 </div>
               </details>
             </div>
             <div class="column">
-              <details class="collapse">
+              <details class="collapse" onclick="showDetails(5)">
                 <summary class="title">Revisões Técnicas</summary>
                 <div class="description">
-                  Artigos <br />
-                  Redações <br />
-                  Documentações
+                  <li>
+                    <span class="material-icons">
+                      article
+                    </span>
+                  Artigos <br></li>
+                  <li>
+                    <span class="material-icons">
+                      edit_note
+                    </span>
+                  Redações <br></li>
+                  <li>
+                    <span class="material-icons">
+                      edit_document
+                    </span>
+                  Documentações</li>
                 </div>
               </details>
-              <details class="collapse">
+              <details class="collapse" onclick="showDetails(7)">
                 <summary class="title">Palestras Técnicas</summary>
                 <div class="description">
-                  Tecnologia <br />
-                  Motivacional <br />
-                  Carreira
+                  <li>
+                    <span class="material-icons">
+                      devices
+                    </span>
+                  Tecnologia <br></li>
+                  <li>
+                    <span class="material-icons">
+                      groups
+                    </span>
+                  Motivacional <br></li>
+                  <li>
+                    <span class="material-icons">
+                      work
+                    </span>
+                  Carreira</li>
                 </div>
               </details>
             </div>
@@ -221,41 +334,85 @@
           ></iframe>
         </div>
       </section>
-      <section id="portifolio">
+      <section id="contact">
+        <div class="section">
+          <h2 class="title"><span class="material-icons">
+            perm_contact_calendar
+            </span> Contato</h2> 
+          <div id="contactButtons">
+            <a href="mailto:gspetillo@gmail.com" target="_blank" style="background-color: #4387F8">
+              <span class="material-icons">verified</span>Email</a>
+            <a href="tel:5511974912475" style="background-color: #0A8095"><span class="material-icons">
+              phone_iphone
+              </span>Telefone</a>
+            <a href="https://wa.me/5511974912475" target="_blank" style="background-color: #0DBF42"><span class="material-icons">
+              whatsapp
+              </span>Whatsapp</a>
+            <a href="https://www.linkedin.com/in/gabrielpetillo" target="_blank" style="background-color: #0A68C5"><span class="material-icons">
+              work
+              </span>Linkedin</a>
+            <a href="https://www.github.com/gspetillo" target="_blank" style="background-color: #000"><span class="material-icons">
+              code
+              </span>Github</a>
+            <a href="https://medium.com/@gspetillo" target="_blank" style="background-color: #000"><span class="material-icons">
+              article
+              </span>Medium</a>
+          </div>
+          <iframe src="https://calendly.com/gabriel-petillo-consulting/reuniao-de-consultoria?embed_domain=308135603-atari-embeds.googleusercontent.com&amp;embed_type=Inline&amp;background_color=1b62aa&amp;text_color=ffffff&amp;primary_color=b5f2fc"  width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+      </section>
+      <section id="portfolio">
         <div class="section content">
-          <h2 class="title">Portifólio</h2>
+          <h2 class="title"><span class="material-icons">
+            folder
+            </span> Portifólio</h2>
           <div id="gallery">
-            <img id="bigImage"></img>
+            <img id="bigImage" src="https://scontent.fcgh14-1.fna.fbcdn.net/v/t1.6435-9/44169209_1909836865796987_1602787760853221376_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFzDvftSs1r5aIl1aYFf1yehIF5Kj8pRICEgXkqPylEgGQCctsFsiisk73KRPth6uW0RgbtS2wwxGXn5VfNB2PH&_nc_ohc=q10nAiZsfsQAX8WYddV&tn=vHE4TA53BQwl2Im2&_nc_ht=scontent.fcgh14-1.fna&oh=00_AT_9TwKYjKI1c_jJ1K7GlPABPIE3SU5glC0RXxkx0GF2AA&oe=62F3DE86"></img>
             <div id="smallImages">
-              
             </div>
           </div>
         </div>
       </section>
-      <section id="contact">
-        <div class="section">
-          <h2 class="title">Contato</h2>
-          <iframe src="https://calendly.com/gabriel-petillo-consulting/reuniao-de-consultoria?embed_domain=308135603-atari-embeds.googleusercontent.com&amp;embed_type=Inline&amp;background_color=1b62aa&amp;text_color=ffffff&amp;primary_color=b5f2fc"  width="100%" height="100%" frameborder="0"></iframe>
+      <section id="projects">
+        <div class="section content">
+          <h2 class="title"><span class="material-icons">
+            factory
+            </span>Projetos</h2>
+            <div id="c">
+              <div id="buttons">
+                <a class="enabled" href="https://forms.gle/W2SQ56vgs2cnNA4z5" target="_blank"><span class="material-icons">
+                  paid
+                </span>Solicitar Orçamento</a>
+                <a class="enabled" href="https://docs.google.com/spreadsheets/d/1BejSXmdz-EErqBU3EG7miDZg6T5ixVDx5dd0upFR4yM/edit?usp=sharing" target="_blank"><span class="material-icons">
+                  sell
+                </span>Tabela de Valores</a>
+                <a class="disabled" href="https://docs.google.com/spreadsheets/d/1BejSXmdz-EErqBU3EG7miDZg6T5ixVDx5dd0upFR4yM/edit?usp=sharing" target="_blank"><span class="material-icons">
+                  description
+                </span>Modelo de Contrato</a>
+              </div>
+              <img src="https://scontent.fcgh14-1.fna.fbcdn.net/v/t1.6435-9/44168560_1909835619130445_6797846336554139648_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeGd04dybWmcp3Babfw4C3nymBG48nW-Qb-YEbjydb5Bv4-WHPiNmZYtXQE0gi9ogcu1naxIq21NL9TYEF35kXXa&_nc_ohc=3yNONgxpHdEAX-A7Q4K&_nc_ht=scontent.fcgh14-1.fna&oh=00_AT9wvEL-KHma2HVIK8RxkO_VN9YBfc8gzmZVbtxclWWPpQ&oe=62F36A9E" alt="" width="800" height="400" style="object-fit:cover; border-radius: 15px;">
+            </div>
         </div>
       </section>
       <section id="about">
         <div class="section content">
-            <h2 class="title">Sobre</h2>
+            <h2 class="title"><span class="material-icons">
+              info</span>Sobre</h2>
             <span>
-                <a href="https://www.linkedin.com/in/gabrielpetillo/" target="_blank">
-                    <img src="./assets/images/photos/foto_GabrielPetillo_Linkedin.jpg" alt="">
-                </a>
-                <div id="bio">
+              <a href="https://www.linkedin.com/in/gabrielpetillo/" target="_blank">
+                  <img src="./assets/images/photos/foto_GabrielPetillo_Linkedin.jpg" alt="">
+              </a>
+              <div id="bio">
                   <h3>Gabriel S. Petillo</h3>
                   <ul>
-                    <li> <b> Analista de Produtos Jr. II</b>  na <b> Cromai</b>, focado no desenvolvimento da plataforma <b>Atlas</b>;</li>
-                    <li> <b> Consultor de Soluções em TI</b>  na <b> Gabriel Petillo Consulting</b> , especializado em tecnologia e design;</li>
-                    <li> Estudante na <b> Capacitação Tecnológica em Engenharia e Desenvolvimento de Software</b>  da <b> Poli-USP</b> ;</li>
-                    <li> Bacharel em <b> Sistemas de Informação</b>  na <b> FIAP</b> , com ênfase em <b> Engenharia de Software e Inteligência Artificial</b></li>
-                    <li> Profissional Técnico em <b> Informática para Internet (Web Design)</b>  na <b> FIEB</b> , qualificado em desenvolvimento de soluções web;</li>
-                    <li> <b> Coordenador de Comunidade</b>  no <b> Nerdzão</b>  e na <b> Connect Community</b> , com atuação no design de identidade visual e gerenciamento de mídias sociais;</li>
+                    <li> <b>Analista de Produtos Jr. II</b>  na <b>Cromai</b>, focado no desenvolvimento da plataforma <b>Atlas</b>;</li>
+                    <li> <b>Consultor de Soluções em TI</b>  na <b>Gabriel Petillo Consulting</b>, especializado em tecnologia e design;</li>
+                    <li> Estudante na <b>Capacitação Tecnológica em Engenharia e Desenvolvimento de Software</b>  da <b>Poli-USP</b>;</li>
+                    <li> Bacharel em <b>Sistemas de Informação</b> na <b>FIAP</b>, com ênfase em <b>Engenharia de Software e Inteligência Artificial</b>;</li>
+                    <li> Profissional Técnico em <b>Informática para Internet (Web Design)</b>  na <b>FIEB</b>, qualificado em desenvolvimento de soluções web;</li>
+                    <li> <b>Coordenador de Comunidade</b>  no <b>Nerdzão</b>  e na <b>Connect Community</b>, com atuação no design de identidade visual e gerenciamento de mídias sociais;</li>
                     <li>
-                        Dedicado ao estudo e aperfeiçoamento em assuntos relacionados ao <b> gerenciamento de produto</b>  e <b> inovações tecnológicas</b>  para <b> desenvolvimento de software</b> , como <b> Inteligência Artificial</b> , <b> Business Intelligence</b> , <b> Segurança da Informação</b> , <b> Big Data</b>  e <b> UX/UI Design</b> .
+                        Dedicado ao estudo e aperfeiçoamento em assuntos relacionados ao <b>gerenciamento de produto</b>  e <b>inovações tecnológicas</b>  para <b>desenvolvimento de software</b>, como <b>Inteligência Artificial</b>, <b>Business Intelligence</b>, <b>Segurança da Informação</b>, <b>Big Data</b>  e <b>UX/UI Design</b>.
                     </li> 
                   </ul>
                 </div>

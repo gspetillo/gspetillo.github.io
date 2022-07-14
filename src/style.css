@@ -151,6 +151,7 @@ a {
 }
 
 #services {
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -281,7 +282,7 @@ details li:hover {
 }
 
 #contact .section {
-  margin: 5rem;
+  margin: 2rem 5rem 5rem;
   height: 150vh;
 }
 
@@ -461,16 +462,6 @@ details li:hover {
   font-size: 1rem;
   padding: 2rem;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-#projects,
-#services {
-  background: linear-gradient(178deg, #fff, #eee);
-  background-size: 400% 400%;
-
-  -webkit-animation: AnimationName 30s ease infinite;
-  -moz-animation: AnimationName 30s ease infinite;
-  animation: AnimationName 30s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
